@@ -5,21 +5,21 @@
 class Onboard < Formula
   desc "Declarative onboarding flows for engineering teams"
   homepage "https://github.com/mihailo-pavlisin/onboarding-copilot"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.3.0/onboarding-copilot_0.3.0_darwin_amd64.tar.gz"
-      sha256 "17ad9098dec6418f73bdca5d805ec3a8480f9d50808c67cc875c988b9cc80cf2"
+      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.4.0/onboarding-copilot_0.4.0_darwin_amd64.tar.gz"
+      sha256 "8ec8c141fe186470a2c1785a35a4e237a036a7dd8c5bb55f65a82c0a7ab2d11e"
 
       define_method(:install) do
         bin.install "onboard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.3.0/onboarding-copilot_0.3.0_darwin_arm64.tar.gz"
-      sha256 "fc2f229575b5e92c039e5fde8c1bed93860694034b1a2acb5efc477d7737b27d"
+      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.4.0/onboarding-copilot_0.4.0_darwin_arm64.tar.gz"
+      sha256 "2f9a4251b6e78d3b00761e08e1b9bb1908ab6bee9413d3b6a82d302af6ef3c01"
 
       define_method(:install) do
         bin.install "onboard"
@@ -29,15 +29,15 @@ class Onboard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.3.0/onboarding-copilot_0.3.0_linux_amd64.tar.gz"
-      sha256 "f6fb5788e41419134800a73d0ba98d63dc527ef134e6923d9b0939e8331234d1"
+      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.4.0/onboarding-copilot_0.4.0_linux_amd64.tar.gz"
+      sha256 "d48cc623636d59de1f9816663c6efeb39eae633596f4e2a07efd171aadd5d3c9"
       define_method(:install) do
         bin.install "onboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.3.0/onboarding-copilot_0.3.0_linux_arm64.tar.gz"
-      sha256 "c9b1f2fa2265e5c1d2cad84b8ea812926d396beb519def093a0e3321e4528e13"
+      url "https://github.com/mihailo-pavlisin/onboarding-copilot/releases/download/v0.4.0/onboarding-copilot_0.4.0_linux_arm64.tar.gz"
+      sha256 "4d34a851e3b5b9700c88dd9b1d5e2813ef0fdd8b6a05ab393559387d2aac2cf2"
       define_method(:install) do
         bin.install "onboard"
       end
