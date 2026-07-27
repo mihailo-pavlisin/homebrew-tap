@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "canute": {
+      "url": "https://onboard-api-prod-o7qzi2yf4q-uc.a.run.app/mcp/live/fae29994-e1a7-4cb5-9535-5a2e5a3ccbc8/sse"
+    }
+  }
+}
